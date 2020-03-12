@@ -6,7 +6,16 @@
     "start": "npm run build && cross-env NODE_ENV=production node dist/src/index.js",
     "start:dev": "ts-node-dev src/index.ts",
     "build": "npm run clean && tsc",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
   },
   "devDependencies": {
     "@types/node": "^13.9.0",
@@ -17,6 +26,8 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"

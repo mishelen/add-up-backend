@@ -8,7 +8,7 @@
   "tabWidth": 2,
   "overrides": [
     {
-      "files": ["*.json", ".eslintrc"],
+      "files": [ "*.json", ".eslintrc", ".lintstagedrc" ],
       "options": {
         "parser": "json",
         "bracketSpacing": false,
