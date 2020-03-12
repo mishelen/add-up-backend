@@ -1,12 +1,8 @@
-# README #
+# Add Up Server #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This is a server part of the Add Up project using Express.js and written in Typescript.
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+All server logic is concentrated in two entities: `Users` and their calculations (`Creases`).
 
 ### How do I get set up? ###
 

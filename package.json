@@ -1,0 +1,8 @@
+{
+  "name": "add-up-backend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:add_up/add-up-backend.git",
+  "author": "Mikhail Hozhy <mikhail.hozhy@gmail.com>",
+  "license": "MIT"
+}
