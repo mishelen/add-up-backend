@@ -2,6 +2,21 @@
   "name": "add-up-backend",
   "version": "0.0.1",
   "main": "index.js",
+  "scripts": {
+    "start": "npm run build && cross-env NODE_ENV=production node dist/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "rimraf": "^3.0.2"
+  },
   "repository": "git@bitbucket.org:add_up/add-up-backend.git",
   "author": "Mikhail Hozhy <mikhail.hozhy@gmail.com>",
   "license": "MIT"
