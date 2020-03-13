@@ -11,10 +11,26 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".json"]
+      }
+    }
+  },
+  "rules": {
+    "import/no-unresolved": [2, {"commonjs": true}],
+    "import/extensions": [
+      2,
+      "ignorePackages",
+      {
+        "ts": "never",
+        "json": "never"
+      }
+    ]
+  },
   "env": {
     "jest": true,
     "node": true
   }
 }
-
-
