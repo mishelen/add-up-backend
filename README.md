@@ -1,25 +1,27 @@
-# Add Up Server #
+# Add Up Server
 
 This is a server part of the Add Up project using Express.js and written in Typescript.
 
 All server logic is concentrated in two entities: `Users` and their calculations (`Creases`).
 
-### How do I get set up? ###
+### How do I get set up?
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Supposed that before you start you will have `node v12` and `yarn` installed.
 
-### Contribution guidelines ###
+- Summary of set up
+- Configuration
+- Dependencies
+- Database configuration
+- How to run tests
+- Deployment instructions
 
-* Writing tests
-* Code review
-* Other guidelines
+### Contribution guidelines
 
-### Who do I talk to? ###
+- Writing tests
+- Code review
+- Other guidelines
 
-* Repo owner or admin
-* Other community or team contact
+### Who do I talk to?
+
+- Repo owner or admin
+- Other community or team contact
