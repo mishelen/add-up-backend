@@ -2,6 +2,7 @@
   "name": "add-up-backend",
   "version": "0.0.1",
   "main": "index.js",
+  "engines": {"node": "12", "yarn": "1.21"},
   "scripts": {
     "start": "npm run build && cross-env NODE_ENV=production node dist/src/index.js",
     "start:dev": "ts-node-dev src/index.ts",
