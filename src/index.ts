@@ -1,7 +1,14 @@
-const b: { [index: string]: number } = {
-  value: 4,
-};
+import createApp from './app';
 
-const c = (a: number) => a ** 2;
+const PORT = 3001;
 
-console.log(c(b.value));
+(async () => {
+  try {
+    const app = await createApp();
+    app.listen(PORT, () => {
+      console.log(`App is listened at ${PORT}`);
+    });
+  } catch (e) {
+    process.exit(1);
+  }
+})();
