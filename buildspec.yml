@@ -13,7 +13,8 @@ phases:
       - echo Entered the build phase...
       - npm run lint
       - npm test
+      - npm run build
 artifacts:
   files:
     - 'dist/**/*'
-  name: addup-backend-build
+    - 'package.json'
