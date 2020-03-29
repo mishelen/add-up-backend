@@ -28,9 +28,14 @@ const creases = (_req: Request, res: Response, next: NextFunction) => {
   }
 };
 
+const health = (_req: Request, res: Response) => {
+  res.send({ ok: true });
+};
+
 const routes: Router = Router();
 
 export default async (): Promise<Router> => {
+  routes.get('/health-status', health);
   routes.get('/users/:id', users);
   routes.get('/creases/:userId', creases);
   return routes;
