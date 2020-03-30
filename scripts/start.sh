@@ -5,5 +5,4 @@ node -v
 whereis node
 npm -v
 which npm
-command -v npm
 npm start
