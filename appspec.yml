@@ -8,18 +8,16 @@ files:
 permissions:
   - object: /
     pattern: '**'
-    owner: ubuntu
-    group: ubuntu
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 60
-      runas: ubuntu
+      runas: root
   ValidateService:
     - location: scripts/health-check.sh
       timeout: 10
-      runas: ubuntu
+      runas: root
