@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/addup-backend
+cd /home/ubuntu/addup-backend
 nvm use default # The first version installed becomes the default
 node -v
 whereis node
