@@ -8,4 +8,7 @@ command -v nvm # Verify that nvm has been installed
 nvm install 12
 nvm use default # The first version installed becomes the default
 node -v
+whereis node
 npm -v
+which npm
+command -v npm
